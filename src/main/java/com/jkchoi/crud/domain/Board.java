@@ -28,6 +28,4 @@ public class Board {    // 게시글 객체
     private LocalDateTime createdDate;
     @Column(nullable = false)
     private LocalDateTime modifiedDate;
-
-
 }
