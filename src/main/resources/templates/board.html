@@ -17,8 +17,8 @@
             <th>글생성시간</th>
         </tr>
         <tr th:each="board : ${boardList}">
-            <td th:text="${board.board_id}"></td>
-            <td th:text="${board.userName}"></td>
+            <td th:text="${board.id}"></td>
+            <td th:text="${board.author}"></td>
             <td th:text="${board.title}"></td>
             <td th:text="${board.createdDate}"></td>
         </tr>
