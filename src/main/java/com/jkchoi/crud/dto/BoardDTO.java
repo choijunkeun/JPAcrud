@@ -31,14 +31,7 @@
 //        this.modifiedAt = modifiedAt;
 //    }
 //
-//    public Board build(){
-//        return Board.builder()
-//                .userName(userName)
-//                .password(password)
-//                .title(title)
-//                .content(content)
-//                .build();
-//    }
+//
 //
 //
 //}
