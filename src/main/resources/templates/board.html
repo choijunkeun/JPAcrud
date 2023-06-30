@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<h2>게시판 목록</h2>
+
+<div th:if="${not #lists.isEmpty(boardList)}">
+    <table class="glyphicon glyphicon-calendar">
+        <tr>
+            <th>no</th>
+            <th>작성자</th>
+            <th>글제목</th>
+            <th>글생성시간</th>
+        </tr>
+        <tr th:each="board : ${boardList}">
+            <td th:text="${board.board_id}"></td>
+            <td th:text="${board.userName}"></td>
+            <td th:text="${board.title}"></td>
+            <td th:text="${board.createdDate}"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
